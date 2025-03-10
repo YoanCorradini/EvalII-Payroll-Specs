@@ -26,7 +26,7 @@ public class EmployeeController {
     /* curl sample :
     curl -i -X POST localhost:8080/employees ^
         -H "Content-type:application/json" ^
-        -d "{\"name\": \"Russel George\", \"role\": \"gardener\"}"
+        -d "{\"name\": \"Russell George\", \"role\": \"gardener\", \"birthDate\": \"1998-02-15\"}"
     */
     @PostMapping("/employees")
     Employee newEmployee(@RequestBody Employee newEmployee){
